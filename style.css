@@ -1,0 +1,522 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнул¤ем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устран¤ем отступы между ¤чейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button {
+	margin: 0; 				/* убираем отступы по умолчанию дл¤ элементов форм (в частности дл¤ checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы дл¤ текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	font-family: 'Lato', sans-serif;/*font-family:'Roboto Condensed', sans-serif;*/
+	color: #7e7f84;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+}
+a, a:visited { /* пор¤док правил дл¤ ссылок имеет значение */
+	
+	text-decoration: none;
+}
+a:hover {
+	
+	text-decoration:none;
+}
+a:focus, a:active {
+	
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+
+
+
+
+header{
+	width:100%;
+	background-color:#fff;
+	overflow:hidden;
+}
+
+.center-block-main{
+	
+	max-width:1020px;
+	margin:0 auto;
+}
+
+.full-logo{
+margin-left:50px;
+float:left;
+margin-top:15px;	
+}
+
+
+
+.logo{
+	
+	float:left;
+
+}
+
+.logo-title{
+margin-left:15px;
+float:right;
+margin-top:2.5px;	
+}
+
+.logo-title h2{
+font-weight:bold;
+font-size:1.25em;
+color:#444444;	
+}
+
+.logo-title p{
+	color:#444444;
+font-size:0.875em;
+}
+.menu
+{
+	
+	margin-top:30px;
+	float:right;
+}
+
+
+.menu li{
+	float:left;
+	margin-right:25px;
+	
+}
+
+.menu li a{
+	color:#444444;
+	font-size:0.875em;
+	font-family:'Lato' sans-serif;
+	font-weight:400;
+	text-transform:uppercase;
+	margin-right:25px;
+}
+
+
+.menu li a:hover{
+
+	color:#fff;
+	background:#1bbc9b;
+	padding:10px;
+	cursor:pointer;
+
+}
+
+
+.first-block-section{
+	margin-top:15px;
+	height:455px;
+	position:relative;
+}
+
+
+.first-block-text{	
+	position:absolute;
+	top:40px;
+	width:580px;
+	left:50%;
+	text-align:center;
+	padding:15px;
+	box-sizing:border-box;
+	margin-left:-290px;
+}
+.first-block-text span{	
+	
+	font-weight:700;
+}
+
+.first-block-text h1{	
+	color:#fff;
+	font-size:55px;
+	font-weight:300;
+}
+
+.first-block-text p{	
+	color:#fff;
+	font-size:16px;
+	font-weight:300;
+	margin-top:30px;
+}
+
+
+.learn-more{
+	color:#fff;
+	display:inline-block;
+	background:#1bbc9b;
+	font-weight:400;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	padding:10px;
+	font-size:12.5px;
+	margin-top:40px;
+}
+
+
+.btn-down{
+	
+	font-size:35px;
+	color:#383433;
+	background:#fff;
+	font-weight:300;
+	padding:0 11px;
+	margin-top:40px;
+	display:inline-block;
+	border-radius:20px;
+}
+
+
+
+
+
+.icons-section h2{
+	text-align:center;
+	font-weight:400;
+	font-size:1.75em;
+	color:#444444;
+	margin-top:50px;
+}
+
+.icons-section h3{
+	text-align:center;
+	color:#444444;
+	margin-top:5px;
+	margin-bottom:50px;
+}
+
+
+.icon-content article{
+	width:17%;
+	margin-left:10.66666666666667%;
+	float:left;
+	margin-top:20px;
+	cursor:pointer;
+}
+
+
+
+.icon-content article:first-child{
+	
+margin-left:0;	
+}
+
+
+.icons-nav {
+	width:500px;
+	margin:10px auto 50px auto;
+
+}
+
+.icons-nav a{
+	margin-right:15px;
+	padding:10px;
+	background:#1bbc9b;
+	display:inline-block;
+	color:#fff;
+	text-transform:uppercase;
+	float:left;
+		cursor:pointer;
+	
+}
+
+.wrap-icon{
+	position:relative;
+	
+}
+
+.into-icon {
+	
+	position:absolute;
+	top:25%;
+	left:50%;
+	margin-left:-50px;
+}
+
+
+
+
+.into-icon h2{
+	font-size:1.125em;
+	color:#fff;
+
+}
+.into-icon h3{
+	font-size:0.875em;
+	color:#fff;
+	
+	
+}
+
+
+.about-us{
+	background:#16a086;
+	margin-top:50px;
+}
+
+.about-us>h2{
+	color:#fff;
+	text-align:center;
+	font-size:1.75em;
+	padding-top:40px;
+}
+.about-us>h3{
+	color:#fff;
+	text-align:center;
+	padding-top:10px;
+}
+
+.wrap-about-us {
+	
+	max-width:765px;
+	margin:0 auto;
+	
+}
+
+
+.wrap-about-us article{
+	
+	width:28.75%;
+	float:left;
+	margin-left:6.875%;
+	
+	
+}
+
+.wrap-about-us article:first-child{
+	
+	
+	margin-left:0;
+	
+	
+}
+
+.wrap-about-us article{
+	
+	
+	background:#fff;
+	margin-top:50px;
+	margin-bottom:70px;
+	
+}
+
+
+.wrap-about-us h2{
+	
+	color:#444444;
+	font-size:1.125em;
+	text-align:center;
+	margin-top:5px;
+	
+	
+}
+.wrap-about-us h3{
+	
+	color:#444444;
+	font-size:0.875em;
+	text-align:center;
+	font-style:italic;
+	
+	
+}
+
+
+.wrap-about-us p{
+	
+	
+	margin-top:5px;
+	color:#444444;
+	font-size:0.875em;
+	text-align:left;
+	padding:10px;
+	
+	
+	
+}
+
+
+.contact-us{
+	
+	background:#ecf0f1;
+}
+
+
+.contact-us>h2{
+	
+	color:#444444;
+	text-align:center;
+	padding-top:50px;
+	font-size:1.75em;
+}
+.contact-us>h3{
+	
+	color:#444444;
+	text-align:center;
+	padding-top:10px;
+	font-size:0.875em;
+}
+
+
+.wrapper-contact article{
+	width:46%;
+	float:left;
+	margin-left:4%;
+	margin-top:50px;
+}
+
+.form-contact-us input[type="text"]{
+	padding:10px 0 10px 0;
+	border:2px solid #bec3c7;
+	margin-right:18px;
+	font-size:0.875em;
+	font-style:italic;
+	width:220px;
+}
+
+.form-contact-us input[type="email"]{
+	padding:10px 0 10px 0;
+	border:2px solid #bec3c7;
+	font-size:0.875em;
+	font-style:italic;
+	width:220px;
+}
+
+.form-contact-us textarea{
+	width:465px;
+	border:2px solid #bec3c7;
+	font-size:1.125em;
+	font-style:italic;
+	resize:none;
+	height:140px;
+	text-align:left;
+	outline:none;
+	margin-top:25px;
+	
+}
+
+.form-contact-us input[type="submit"]{
+	float:right;
+	margin-top:10px;
+	margin-bottom:10px;
+	background:#1bbc9b;
+	color:#fff;
+	border:0;
+	text-transform:uppercase;
+	padding:10px 25px;
+	font-family:'Lato';
+	font-size:0.875em;
+	text-align:center;
+	cursor:pointer;
+	letter-spacing:2px;
+}
+
+
+.information-section h2{
+	font-size:0.875em;
+	margin-bottom:10px;
+	text-transform:uppercase;
+	color:#444444;
+}
+
+.information-section p{
+	font-size:0.875em;
+	margin-top:20px;
+	
+	color:#444444;
+}
+
+.ftr{
+	
+	background:#2d3e50;
+}
+
+.ftr-content{
+	
+	width:92%;
+	padding:20px 0 20px 0;
+}
+
+.ftr-content p{
+	float:left;
+	color:#fff;
+	margin-top:10px;
+	font-size:0.875em;
+}
+
+.ftr-content a{
+	color:#fff;
+	float:right;
+	background:#1bbc9b;
+	padding:5px 15px;
+	font-size:1.75em;
+	font-weight:bold;
+	border-radius:5px;
+}
